@@ -81,3 +81,32 @@
     font-size: 1.0em;
     color: #000;
 }
+@media screen and (max-width: 900px) {
+    .input-container .input-wrap .pin {
+        left: 15px;        
+    }
+}
+@media screen and (max-width: 600px) {
+    .input-container .input-wrap .pin {
+        left: 10px;        
+    }
+    .input-container .input-wrap input {
+        font-size: 1.0em;
+    }
+    .main-body{
+        width: 85%;
+        padding: 0 30px 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .input-container .input-wrap .pin {
+        left: 5px;        
+    }
+    .input-container .input-wrap input {
+        font-size: 0.8em;
+    }
+    .main-body{
+        width: 90%;
+        padding: 0 20px 20px;
+    }
+}
