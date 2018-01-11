@@ -1,0 +1,52 @@
+
+    .installbutton{
+        background-color: #2294ff;
+        padding: 25px;
+        font-size: 18pt;
+        border-color: #285e8e;
+        color: #fff;
+    }
+    
+    .centerme{
+    margin:0 auto;
+    text-align:center;
+    margin-top:100px;
+    }
+    
+
+.main {
+    margin: 0 auto;
+    background-color: #005ba5;
+    color: #fff;
+    text-align: center;
+    background-image: url('assets/images/boston.jpg');
+    background-size: cover;
+}
+
+.disclaimer {
+    font-size: .85em;
+    max-width: 28em;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.main-body {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+  width: 80%;
+  min-width: 320px;
+}
+
+#zipcode2 {
+    padding: 15px !important;
+    font-size: 1.5em;
+    height: auto !important;
+    text-align: center;
+    line-height: normal;
+}
