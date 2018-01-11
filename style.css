@@ -1,19 +1,19 @@
 
-    .installbutton{
-        background-color: #2294ff;
-        padding: 25px;
-        font-size: 18pt;
-        border-color: #285e8e;
-        color: #fff;
-    }
-    
-    .centerme{
+.installbutton{
+    background-color: #2294ff;
+    padding: 15px;
+    font-size: 1.4em;
+    font-weight: 700;
+    border-color: #285e8e;
+    color: #fff;
+}
+
+.centerme{
     margin:0 auto;
     text-align:center;
     margin-top:100px;
-    }
+}
     
-
 .main {
     margin: 0 auto;
     background-color: #005ba5;
@@ -25,7 +25,7 @@
 
 .disclaimer {
     font-size: .85em;
-    max-width: 28em;
+    /* max-width: 28em; */
     text-align: left;
     margin: 0 auto;
     padding: 0 1em;
@@ -41,6 +41,8 @@
   -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
   width: 80%;
   min-width: 320px;
+  background: rgba(255, 255, 255, .6);
+  padding: 0 40px 20px;
 }
 
 #zipcode2 {
@@ -49,4 +51,33 @@
     height: auto !important;
     text-align: center;
     line-height: normal;
+}
+
+.input-container .input-wrap.focus {
+    border: 1px solid #387FFB;
+}
+
+.input-container .input-wrap {
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 1px solid #DADADA;
+    position: relative;
+    padding: 15px 0px;
+}
+
+.input-container .input-wrap .pin {
+    width: 16px;
+    position: absolute;
+    left: 25px;
+    top: 16px;
+}
+
+.input-container .input-wrap input {
+    margin-left: 20px;
+    width: 90%;
+    border: 0px;
+    outline: none;
+    font-size: 1.0em;
+    color: #000;
 }

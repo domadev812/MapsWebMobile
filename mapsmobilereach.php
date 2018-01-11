@@ -1,44 +1,24 @@
 
 <?php // Required - Do not modify
-
-include("commonFunctions.php"); 
-
+	include("commonFunctions.php"); 
 ?>
 
 <?php //Required - Modify profile page variables here
 
-$profile_id = "f27ae5d8effe4a33ae91b74f61cc387a";
-$product_id = "100436";
-$pubid = "1295";
-
-$source=$product_id;
-
-$userAgent=urlencode($_SERVER['HTTP_USER_AGENT']);
-if( strpos($userAgent, 'iPhone') == false && strpos($userAgent, 'iPad') == false ) {
-	$callToActionName="DoTrack";
-}
-else {
-	$callToActionName="GoSubscribe";
-}
-
+	$profile_id = "f27ae5d8effe4a33ae91b74f61cc387a";
+	$product_id = "100436";
+	$pubid = "1295";		
+	$source=$product_id;
+	$userAgent=urlencode($_SERVER['HTTP_USER_AGENT']);
+	if( strpos($userAgent, 'iPhone') == false && strpos($userAgent, 'iPad') == false ) {
+		$callToActionName="DoTrack";
+	}
+	else {
+		$callToActionName="GoSubscribe";
+	}
 ?>
 
 <!--landing page html goes here-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -55,28 +35,36 @@ else {
 	<div class="container">
 		<div class="row">
 	      	<div class="col-xs-12">
-          	<div style="font-size:19pt;text-align:left;" class="location">&nbsp;</div>
-          	<div style="font-size:12pt;text-align:left;" class="date"></div>
+				<div style="font-size:19pt;text-align:left;" class="location">&nbsp;</div>
+				<div style="font-size:12pt;text-align:left;" class="date"></div>
 	      	</div>
 	  	</div>
 	</div>
   	<div class="main-body">
-
 	  	<div class="row">
         	<div class="col-xs-12">
-            	<h1 style="color:Black; font-weight: bold;
-            	">Get Maps Directions</h1>
-            	
+            	<h1 style="color:Black; font-weight: bold;font-size: 30px;padding: 20px 0;">Get Maps Directions</h1>            	
         	</div>
     	</div>
-
+		<div class="row">
+        	<div class="col-xs-12">
+				<div class="input-container">
+					<div class="input-wrap focus">
+						<img src="assets/images/green-pin.png" class="pin">
+						<input type="text" id="addr" placeholder="Enter Address, Business or Landmark" autocomplete="off">
+					</div>
+					<div class="input-wrap">
+						<img src="assets/images/red-pin.png" class="pin">
+						<input type="text" id="addr2" placeholder="Enter Address, Business or Landmark" autocomplete="off">
+					</div>					
+        		</div>
+    		</div>
+		</div>
 	    <div class="row">
 	        <div class="col-xs-12">
-	        	<div class="form-group">
-	        	
+	        	<div class="form-group">	        	
 	        	</div>
-	            <button class="btn btn-primary btn-block installbutton" onclick="<?=$callToActionName?>()" id="installButton">GET MAPS DIRECTIONS</button>
-							
+	            <button class="btn btn-primary btn-block installbutton" onclick="<?=$callToActionName?>()" id="installButton">GET DIRECTIONS</button>							
 	        </div>
 	    </div>
 
@@ -88,9 +76,7 @@ else {
 	            </div>
 	        </div>
 	    </div>
-
     </div>
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -98,16 +84,8 @@ else {
 	<script src="https://js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js" type="text/javascript"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<?php //Required - Do not modify
-	 include ("javascriptFunctions.php"); 
+		include ("javascriptFunctions.php"); 
 	?>
-	
-
-	
-	
-	
-	
-	
-	
 </body>
 
 <!--end landing page html -->
